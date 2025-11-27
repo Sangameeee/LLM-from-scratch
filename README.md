@@ -1,7 +1,14 @@
 # Large Language Model from scratch
+## Table of Contents 
+- [Introduction](#1-introduction) 
+-  [Tokenization and data embedding](#2-Tokenization-and-Data-embedding) 
+- [Attention mechanism](#3-Attention-Mechanism) 
+- [Results till now](#4-RESULTS-till-now) 
+
+## 1. Introduction:
 In this project, I try to create a LLM architecture from start using PyTorch. This project aims to enrich the knowledge about transformers how they work and every steps taken is throughly implemented. For this project Decoder-architecture GPT2 is rebuilt as training takes a huge resources so weight can be imported while also trying to train on small custom dataset.
 
-## Tokenization and Data embedding:
+## 2. Tokenization and Data embedding:
 Word embeddings is necessary as LLMs cannot process raw text directly so we represent it as a cotinuous-valued vectors. 
 This section covers:
 - **Tokenization:** Tokenization is done by using Byte pair encoding. Custom made tokenizer is slower than tiktokenizer library which uses Rust so we are using Tiktokenizer for BPE. Byte Pair encoding is used as complex and unique words gets broken down into most frequent tokens during BPE training. Vocabulary has some tokens for subword and complex word gets broken down into those subwords token. It is both word as well as character level tokenization. 
@@ -13,7 +20,7 @@ This section covers:
 				if there was no positional encoding these two text would be same 
 
 
-## Attention Mechanism:
+## 3. Attention Mechanism:
 Attention mechanism allows each word in a sequence to look at each other and provide importance to it.
 - **Self attention:** Implemented self attention as a example  without using query,key, values and masking at first to visualize how attention works. 
 	- compute attention scores : 
@@ -35,6 +42,9 @@ Attention mechanism allows each word in a sequence to look at each other and pro
 - **Multihead attention:**
 	Multihead means divinding the attention meachanism into multiple "heads"each operating independently
 
+## 4. RESULTS till now 
+In this I have made a GPT2 model architecture from scratch for the training purposes.Since training a model in huge dataset is not feasible and takes huge computing resources. Two approaches are followed where one is we train model on random weight. Next since GPT2 Model weights are publicly available load that weight and train on that weight these approaches are used. <br>
+**<u>NOTE: Below given is not a final result work is being carried out and different approach and evaluation metrics will be used and results will be updated</u>**
 
 		
 
