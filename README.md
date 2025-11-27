@@ -45,8 +45,11 @@ Attention mechanism allows each word in a sequence to look at each other and pro
 ## 4. RESULTS till now 
 In this I have made a GPT2 model architecture from scratch for the training purposes.Since training a model in huge dataset is not feasible and takes huge computing resources. Two approaches are followed where one is we train model on random weight. Next since GPT2 Model weights are publicly available load that weight and train on that weight these approaches are used. <br>
 **<u>NOTE: Below given is not a final result work is being carried out and different approach and evaluation metrics will be used and results will be updated</u>**
+<br>final.ipynb has everything jumbles in single file if u want to recreate and retrain yourself 
 
-		
+![result1](https://github.com/Sangameeee/LLM-from-scratch/blob/main/results/result1.png?raw=true)
+
+![result2](https://github.com/Sangameeee/LLM-from-scratch/blob/main/results/result2.png?raw=true)
 
 
 
